@@ -5,10 +5,8 @@ export default function Home() {
   // Sample data for related games
   const hotGames = [
     { title: 'Chill Girl Clicker', imageSrc: '/images/game-thumbnails/chill-girl-clicker-game-f220x175.png', slug: 'chill-girl-clicker' },
-    { title: 'Color Rush', imageSrc: '/images/game-thumbnails/color-rush.png', slug: 'color-rush' },
-    { title: 'Supermarket Master', imageSrc: '/images/game-thumbnails/supermarket-master.png', slug: 'supermarket-master' },
-    { title: 'Curve Rush', imageSrc: '/images/game-thumbnails/curve-rush.png', slug: 'curve-rush' },
-    { title: 'Wave Road', imageSrc: '/images/game-thumbnails/wave-road.png', slug: 'wave-road' },
+    { title: 'Roblox Clicker', imageSrc: 'https://cdn2.scratch.mit.edu/get_image/project/568479962_480x360.png', slug: 'roblox-clicker' },
+    { title: 'Pokemon Clicker', imageSrc: 'https://cdn2.scratch.mit.edu/get_image/project/116421566_480x360.png', slug: 'pokemon-clicker' },
     // Add more games as needed
   ];
 
@@ -32,7 +30,7 @@ export default function Home() {
               gameTitle="Chill Guy Clicker"
               gameLogoSrc="/images/chill-guy-logo.png"
               rating={4.3}
-              backgroundImageSrc="/images/chill-guy-background.jpg"
+              backgroundImageSrc="/images/game-thumbnails/chill-guy-clicker-game-f220x175.jpg"
               thumbnailSrc="/images/game-thumbnails/chill-guy-clicker-game-f220x175.jpg"
             />
           </section>
