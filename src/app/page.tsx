@@ -1,23 +1,8 @@
+import HotGamesPool from '@/components/HotGamesPool';
+import NewGamesPool from '@/components/NewGamesPool';
 import GameContainer from '@/components/GameContainer';
-import GameCard from '@/components/GameCard';
 
 export default function Home() {
-  // Sample data for related games
-  const hotGames = [
-    { title: 'Chill Girl Clicker', imageSrc: '/images/game-thumbnails/chill-girl-clicker-game-f220x175.png', slug: 'chill-girl-clicker' },
-    { title: 'Roblox Clicker', imageSrc: 'https://cdn2.scratch.mit.edu/get_image/project/568479962_480x360.png', slug: 'roblox-clicker' },
-    { title: 'Pokemon Clicker', imageSrc: 'https://cdn2.scratch.mit.edu/get_image/project/116421566_480x360.png', slug: 'pokemon-clicker' },
-    // Add more games as needed
-  ];
-
-  const newGames = [
-    { title: 'Knock Balls', imageSrc: '/images/game-thumbnails/knock-balls.png', slug: 'knock-balls' },
-    { title: 'Monkey Mart', imageSrc: '/images/game-thumbnails/monkey-mart.png', slug: 'monkey-mart' },
-    { title: 'Shooter Sky', imageSrc: '/images/game-thumbnails/shooter-sky.png', slug: 'shooter-sky' },
-    { title: 'Red Light Green Light', imageSrc: '/images/game-thumbnails/red-light-green-light.png', slug: 'red-light-green-light' },
-    { title: 'Wave Dash', imageSrc: '/images/game-thumbnails/wave-dash.png', slug: 'wave-dash' },
-  ];
-
   return (
     <div className="bg-[#f5f5f5]">
       <div className="flex flex-col md:flex-row max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8 gap-6">
@@ -35,20 +20,7 @@ export default function Home() {
             />
           </section>
 
-          {/* New Games Section */}
-          <section id="new-games" className="mb-8">
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">New Games</h2>
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-4">
-              {newGames.map((game, index) => (
-                <GameCard 
-                  key={index}
-                  title={game.title}
-                  imageSrc={game.imageSrc}
-                  slug={game.slug}
-                />
-              ))}
-            </div>
-          </section>
+          <NewGamesPool />
 
           {/* Game Info SEO Section */}
           <section className="bg-white rounded-lg shadow-md p-6">
@@ -191,19 +163,7 @@ export default function Home() {
 
         {/* Sidebar */}
         <div className="w-full md:w-1/3">
-          <div className="bg-[#dfe3f3] rounded-lg shadow-md p-4 mb-6">
-            <h2 className="text-xl font-bold text-gray-800 mb-4">Hot games</h2>
-            <div className="grid grid-cols-2 gap-3">
-              {hotGames.map((game, index) => (
-                <GameCard 
-                  key={index}
-                  title={game.title}
-                  imageSrc={game.imageSrc}
-                  slug={game.slug}
-                />
-              ))}
-            </div>
-          </div>
+          <HotGamesPool />
         </div>
       </div>
     </div>

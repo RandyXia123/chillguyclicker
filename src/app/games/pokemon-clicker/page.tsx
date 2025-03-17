@@ -1,16 +1,16 @@
-"use client";
+import SimilarGamesPool from '@/components/SimilarGamesPool';
+import NewGamesPool from '@/components/NewGamesPool';
 import GameContainer from '@/components/GameContainer';
-import GameCard from '@/components/GameCard';
 
 export default function PokemonClickerPage() {
-  // Sample data for related games
-  const relatedGames = [
-    { title: 'Chill Guy Clicker', imageSrc: '/images/game-thumbnails/chill-guy-clicker-game-f220x175.jpg', slug: '/' },
-    { title: 'Chill Girl Clicker', imageSrc: '/images/game-thumbnails/chill-girl-clicker-game-f220x175.png', slug: '/chill-girl-clicker' },
-    { title: 'Roblox Clicker', imageSrc: 'https://cdn2.scratch.mit.edu/get_image/project/568479962_480x360.png', slug: 'roblox-clicker' },
-
-    // Add more related games as needed
-  ];
+  // Define current game data
+  const currentGame = {
+    title: 'Pokemon Clicker',
+    slug: '/pokemon-clicker',
+    category: ['clicker', 'idle'],
+    rating: 4.3,
+    imageSrc: 'https://cdn2.scratch.mit.edu/get_image/project/116421566_480x360.png'
+  };
 
   return (
     <div className="bg-[#f5f5f5]">
@@ -28,6 +28,8 @@ export default function PokemonClickerPage() {
               thumbnailSrc="https://cdn2.scratch.mit.edu/get_image/project/116421566_480x360.png"
             />
           </section>
+
+          <NewGamesPool />
 
           {/* Game Info SEO Section */}
           <section className="bg-white rounded-lg shadow-md p-6">
@@ -128,19 +130,7 @@ export default function PokemonClickerPage() {
 
         {/* Sidebar */}
         <div className="w-full md:w-1/3">
-          <div className="bg-[#dfe3f3] rounded-lg shadow-md p-4 mb-6">
-            <h2 className="text-xl font-bold text-gray-800 mb-4">Related Games</h2>
-            <div className="grid grid-cols-2 gap-3">
-              {relatedGames.map((game, index) => (
-                <GameCard 
-                  key={index}
-                  title={game.title}
-                  imageSrc={game.imageSrc}
-                  slug={game.slug}
-                />
-              ))}
-            </div>
-          </div>
+          <SimilarGamesPool currentGame={currentGame} />
         </div>
       </div>
     </div>

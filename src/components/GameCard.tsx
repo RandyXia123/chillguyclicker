@@ -10,8 +10,9 @@ interface GameCardProps {
 }
 
 export default function GameCard({ title, imageSrc, slug }: GameCardProps) {
-  // Force absolute path by using the full URL path
-  const href = slug === '/' ? '/' : `/games/${slug}`;
+  // Special case for Chill Guy Clicker - go to homepage
+  const href = title === 'Chill Guy Clicker' ? '/' : 
+               slug === '/' ? '/' : `/games/${slug}`;
 
   return (
     <Link 
