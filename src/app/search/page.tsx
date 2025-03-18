@@ -1,11 +1,12 @@
 "use client";
-import { useEffect, useState } from 'react';
+import { useEffect, useState, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { games, Game } from '@/data/games';
 import GameCard from '@/components/GameCard';
 import Head from 'next/head';
 
-export default function SearchPage() {
+// Create a separate component for the search functionality
+function SearchResults() {
   const searchParams = useSearchParams();
   const query = searchParams.get('q') || '';
   const [searchResults, setSearchResults] = useState<Game[]>([]);
@@ -65,6 +66,28 @@ export default function SearchPage() {
             </p>
           </div>
         )}
+      </main>
+    </>
+  );
+}
+
+// Main page component
+export default function SearchPage() {
+  return (
+    <>
+      <Head>
+        <title>Search Games | Chill Guy Clicker</title>
+        <meta name="robots" content="noindex" />
+      </Head>
+      
+      <main className="container mx-auto px-4 py-8">
+        <Suspense fallback={
+          <div className="text-center py-8">
+            <p>Loading search results...</p>
+          </div>
+        }>
+          <SearchResults />
+        </Suspense>
       </main>
     </>
   );
