@@ -1,4 +1,4 @@
-import GameCard from './GameCard';
+import GamePool from './GamePool';
 import { games } from '@/data/games';
 
 export default function NewGamesPool() {
@@ -6,22 +6,14 @@ export default function NewGamesPool() {
   const newGames = games
     .filter(game => game.isNew)
     .sort((a, b) => new Date(b.releaseDate || 0).getTime() - new Date(a.releaseDate || 0).getTime())
-    .slice(0, 6); // Show 6 games (3 rows of 2)
+    .slice(0, 8); // Show only 4 games (2×2 grid)
   
   return (
-    <section className="mb-8">
-      <h2 className="text-2xl font-bold text-gray-800 mb-4">New Games</h2>
-      <div className="grid grid-cols-2 gap-4">
-        {newGames.map((game, index) => (
-          <GameCard 
-            key={index}
-            title={game.title}
-            imageSrc={game.imageSrc}
-            slug={game.slug}
-            cardStyle="square"
-          />
-        ))}
-      </div>
-    </section>
+    <GamePool 
+      title="New Games"
+      games={newGames}
+      columns={2} // Force exactly 2 columns
+      className="grid-cols-2" // Override any responsive columns
+    />
   );
 } 

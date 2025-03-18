@@ -18,7 +18,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link href="/about" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/about-us" className="text-gray-300 hover:text-white transition-colors">
                   About Us
                 </Link>
               </li>
@@ -61,7 +61,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700 text-center text-sm text-gray-400">
-          <p>© {new Date().getFullYear()} Chill Guy Clicker. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} Chill Guy Clicker.us. All rights reserved.</p>
         </div>
       </div>
     </footer>

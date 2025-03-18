@@ -20,13 +20,13 @@ export default function ContactUsPage() {
       <div className="bg-white/10 rounded-lg p-8 shadow-xl">
         <h1 className="text-3xl font-bold text-[#d19a53] mb-8">Contact Us</h1>
 
-        <div className="mb-8 text-gray-200">
+        <div className="mb-8 text-gray-500">
           <p>Have a question or feedback? We'd love to hear from you. Fill out the form below to get in touch with us.</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
-            <label htmlFor="name" className="block text-gray-200 mb-2">Name</label>
+            <label htmlFor="name" className="block text-gray-500 mb-2">Name</label>
             <input
               type="text"
               id="name"
@@ -38,7 +38,7 @@ export default function ContactUsPage() {
           </div>
 
           <div>
-            <label htmlFor="email" className="block text-gray-200 mb-2">Email</label>
+            <label htmlFor="email" className="block text-gray-500 mb-2">Email</label>
             <input
               type="email"
               id="email"
@@ -50,7 +50,7 @@ export default function ContactUsPage() {
           </div>
 
           <div>
-            <label htmlFor="subject" className="block text-gray-200 mb-2">Subject</label>
+            <label htmlFor="subject" className="block text-gray-500 mb-2">Subject</label>
             <input
               type="text"
               id="subject"
@@ -62,7 +62,7 @@ export default function ContactUsPage() {
           </div>
 
           <div>
-            <label htmlFor="message" className="block text-gray-200 mb-2">Message</label>
+            <label htmlFor="message" className="block text-gray-500 mb-2">Message</label>
             <textarea
               id="message"
               required

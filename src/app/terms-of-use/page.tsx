@@ -6,7 +6,7 @@ export default function TermsOfUsePage() {
           General Terms Of Use For Chill Guy Clicker Content
         </h1>
 
-        <div className="space-y-6 text-gray-200">
+        <div className="space-y-6 text-gray-500">
           {/* Agreement Section */}
           <div className="leading-relaxed">
             <p>
@@ -22,8 +22,8 @@ export default function TermsOfUsePage() {
           {/* Disclaimer Section */}
           <div className="leading-relaxed">
             <p>
-              Chill Guy Clicker LLC makes no promises that our visitors' grades will improve by the use 
-              of any of our family of sites. Chill Guy Clicker LLC does not guarantee the accuracy of 
+              Chill Guy Clicker.us makes no promises that our visitors' grades will improve by the use 
+              of any of our family of sites. Chill Guy Clicker.us does not guarantee the accuracy of 
               any information included in any of our family of sites, nor do we guarantee the accuracy 
               of the information included in any of the sites we link to.
             </p>
@@ -35,18 +35,18 @@ export default function TermsOfUsePage() {
               The information included in our family of sites is meant to supplement standard academic 
               courses and classroom instruction. We are not responsible for any of the content included 
               in any of our licensed content that is authored by people not employed by Chill Guy 
-              Clicker LLC, such as our games at Chill Guy Clicker. Chill Guy Clicker is not responsible 
+              Clicker Sites, such as our games at Chill Guy Clicker.us. Chill Guy Clicker.us is not responsible 
               for any ads that may appear on our sites via error or malware viruses.
             </p>
           </div>
 
           {/* Copyright Section */}
-          <div className="leading-relaxed bg-black/30 p-6 rounded-lg mt-8">
+          <div className="leading-relaxed bg-black/50 p-6 rounded-lg mt-8 text-gray-200">
             <p>
               All materials on this site, as well as the organization and layout of the site, (except 
-              for our licensed content such as the games at chillguyclicker.io) are owned and 
-              copyrighted by chillguyclicker.io LLC and may be accessed or printed for your personal 
-              non-commercial use only. Without the prior written permission of chillguyclicker.io LLC, 
+              for our licensed content such as the games at chillguyclicker.us) are owned and 
+              copyrighted by chillguyclicker.us and may be accessed or printed for your personal 
+              non-commercial use only. Without the prior written permission of chillguyclicker.us, 
               you may not copy, modify, distribute or transfer any material on this site, in whole or 
               in part.
             </p>

@@ -4,22 +4,17 @@ export default function CopyrightPage() {
       <div className="bg-white/10 rounded-lg p-8 shadow-xl">
         <h1 className="text-3xl font-bold text-[#d19a53] mb-8">Copyright Infringement Notice Procedure</h1>
         
-        <div className="space-y-6 text-gray-200">
+        <div className="space-y-6 text-gray-500">
           <p className="leading-relaxed">
             If you believe that any copyright infringement exists on the Site, please use the following process to notify us. 
             We will act expeditiously to remove infringing material once informed. All claims of copyright infringement should be 
             in writing and should be directed to our Designated Agent below:
           </p>
 
-          <div className="bg-black/30 p-6 rounded-lg my-8">
-            <p className="font-semibold mb-2">Copyright Manager</p>
-            <address className="not-italic">
-              chillguyclicker.io LLC<br />
-              122 East 42nd Street<br />
-              Suite 1611<br />
-              New York, NY 10168<br />
-              E-mail: <a href="mailto:support@chillguyclicker.io" className="text-[#d19a53] hover:underline">support@chillguyclicker.io</a>
-            </address>
+          <div className="bg-black/50 p-6 rounded-lg my-8 text-gray-200">
+            <p>
+              E-mail: <a href="mailto:randy.as.a.freelancer@gmail.com" className="text-[#d19a53] hover:underline">randy.as.a.freelancer@gmail.com</a>
+            </p>
           </div>
 
           <div>
