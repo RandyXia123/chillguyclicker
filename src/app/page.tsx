@@ -1,10 +1,14 @@
 import HotGamesPool from '@/components/HotGamesPool';
 import NewGamesPool from '@/components/NewGamesPool';
 import GameContainer from '@/components/GameContainer';
+import Head from 'next/head';
 
 export default function Home() {
   return (
     <div className="bg-[#f5f5f5]">
+      <Head>
+        <link rel="canonical" href="https://www.chillguyclicker.us" />
+      </Head>
       <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col lg:flex-row gap-6">
           <div className="w-full lg:w-2/3">
@@ -14,7 +18,7 @@ export default function Home() {
                 className="w-full relative h-[600px] sm:h-auto sm:aspect-video"
               >
                 <GameContainer 
-                  gameUrl="https://game.azgame.io/chill-guy-clicker/"
+                  gameUrl="https://pokerogue.io/chill-guys-clicker.embed"
                   gameTitle="Chill Guy Clicker"
                   gameLogoSrc="/images/chill-guy-logo.png"
                   rating={4.3}
