@@ -170,8 +170,55 @@ export const games: Game[] = [
     category: ['Sprunki'],
     releaseDate: '2024-10-29'
   },
-  
-  
+  {
+    title: 'Temple Run 2',
+    imageSrc: '/images/game-thumbnails/templerun22-m180x180.webp',
+    slug: '/temple-run-2',
+    rating: 4.6,
+    isHot: true, 
+    isNew: true,
+    category: ['action'],
+    releaseDate: '2025-03-19'
+  },
+  {
+    title: 'Escape Road City 2',
+    imageSrc: '/images/game-thumbnails/escaperoadcity2-m180x180.webp',
+    slug: '/escape-road-city-2',
+    rating: 4.5,
+    isHot: true,
+    isNew: true,
+    category: ['action'],
+    releaseDate: '2025-03-19'
+  },
+  {
+    title: 'Traffic Road',
+    imageSrc: '/images/game-thumbnails/trafficroad-m180x180.webp',
+    slug: '/traffic-road',
+    rating: 4.6,
+    isHot: true,
+    isNew: true,
+    category: ['action'],
+    releaseDate: '2025-03-19'
+  },
+  {
+    title: 'Ragdoll Hit Stickman',
+    imageSrc: '/images/game-thumbnails/ragdollhitstickman1-m180x180.webp',
+    slug: '/ragdoll-hit-stickman',
+    rating: 4.5,
+    isHot: true,
+    isNew: true,
+    category: ['action'],
+    releaseDate: '2025-03-19'
+  },
+  {
+    title: 'Snow Road 3D',
+    imageSrc: '/images/game-thumbnails/snowroad-m180x180.webp',
+    slug: '/snow-road-3d',
+    rating: 4.5,
+    isHot: true,
+    category: ['action'],
+    releaseDate: '2025-03-19'
+  },
   
   
   
