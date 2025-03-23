@@ -37,11 +37,29 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.5,
     },
+    {
+      url: `${baseUrl}/privacy-policy`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.5,
+    },
+    {
+      url: `${baseUrl}/terms-of-use`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.5,
+    },
+    {
+      url: `${baseUrl}/copyright`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly' as const,
+      priority: 0.5,
+    },
   ]
 
   // Dynamic routes from games
   const gameRoutes = games.map((game) => ({
-    url: `${baseUrl}${game.slug}`,
+    url: `${baseUrl}/games${game.slug}`,
     lastModified: new Date(game.releaseDate || new Date()),
     changeFrequency: 'weekly' as const,
     priority: 0.8,
