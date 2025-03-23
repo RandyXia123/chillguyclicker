@@ -58,12 +58,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   ]
 
   // Dynamic routes from games
-  const gameRoutes = games.map((game) => ({
-    url: `${baseUrl}/games${game.slug}`,
-    lastModified: new Date(game.releaseDate || new Date()),
-    changeFrequency: 'weekly' as const,
-    priority: 0.8,
-  }))
+  const gameRoutes = games
+    .filter(game => game.slug !== '/chill-guy-clicker') // Filter out chill-guy-clicker
+    .map((game) => ({
+      url: `${baseUrl}/games${game.slug}`,
+      lastModified: new Date(game.releaseDate || new Date()),
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    }))
 
   return [...staticRoutes, ...gameRoutes]
 } 
