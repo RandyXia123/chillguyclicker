@@ -1,6 +1,15 @@
+import { Metadata } from 'next';
 import SimilarGamesPool from '@/components/SimilarGamesPool';
 import NewGamesPool from '@/components/NewGamesPool';
 import GameContainer from '@/components/GameContainer';
+
+export const metadata: Metadata = {
+  title: 'Escape Road City 2 - Free Browser Game | Racing Games',
+  description: 'Play Escape Road City 2, a thrilling racing game with police chases and vehicle customization. Free browser game with no downloads required!',
+  alternates: {
+    canonical: 'https://www.chillguyclicker.us/games/escape-road-city-2'
+  }
+};
 
 export default function EscapeRoadCity2Page() {
   // Define current game data
