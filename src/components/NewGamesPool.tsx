@@ -12,8 +12,8 @@ export default function NewGamesPool() {
     <GamePool 
       title="New Games"
       games={newGames}
-      columns={2} // Force exactly 2 columns
-      className="grid-cols-2" // Override any responsive columns
+      columns={4}
+      className="[&_div.grid]:grid-cols-2 [&_div.grid]:sm:grid-cols-4 [&_a]:!w-[180px] [&_a]:mx-auto [&_div.relative]:!w-[180px] [&_div.relative]:!h-[180px] [&_.bg-white]:!w-[180px]"
     />
   );
 } 

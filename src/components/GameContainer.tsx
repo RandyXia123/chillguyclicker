@@ -124,10 +124,22 @@ const GameContainer: React.FC<GameContainerProps> = ({
             💬
           </button>
           <button 
+            onClick={() => {
+              if (navigator.share) {
+                navigator.share({
+                  title: gameTitle,
+                  url: window.location.href
+                }).catch(console.error);
+              } else {
+                // Fallback - copy to clipboard
+                navigator.clipboard.writeText(window.location.href);
+                // You might want to add a toast notification here
+              }
+            }}
             className="text-white hover:text-gray-300 transition-colors p-2"
-            title="Theater Mode"
+            title="Share"
           >
-            ↔️
+            📤
           </button>
           <button 
             onClick={toggleFullScreen}

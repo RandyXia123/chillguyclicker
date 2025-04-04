@@ -219,6 +219,16 @@ export const games: Game[] = [
     category: ['action'],
     releaseDate: '2025-03-19'
   },
+  {
+    title: 'Chill Guy Clicker 3D',
+    imageSrc: '/images/game-thumbnails/chillguyclicker3d-m180x180.webp',
+    slug: '/chill-guy-clicker-3d',
+    rating: 4,
+    isHot: true,
+    isNew: true,
+    category: ['clicker'],
+    releaseDate: '2025-04-03'
+  },
   
   
   

@@ -12,6 +12,11 @@ export default function SimilarGamesPool({ currentGame, maxGames = 10 }: Similar
       game.slug !== currentGame.slug && // Exclude current game
       game.category?.some(cat => currentGame.category?.includes(cat)) // Match categories
     )
+    .sort((a, b) => {
+      const dateA = new Date(a.releaseDate || 0);
+      const dateB = new Date(b.releaseDate || 0);
+      return dateB.getTime() - dateA.getTime(); // Sort newest first
+    })
     .slice(0, maxGames);
   
   return (

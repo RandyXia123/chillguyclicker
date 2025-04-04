@@ -20,7 +20,7 @@ export default function GameCard({ title, imageSrc, slug }: GameCardProps) {
       className="block group"
     >
       <div className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
-        <div className="relative h-36 w-full">
+        <div className="relative aspect-square w-full">
           <Image 
             src={imageSrc} 
             alt={title} 
